@@ -13,7 +13,7 @@ namespace FreshFruit
         public MainWindow()
         {
             InitializeComponent();
-            Bucket keranjangBuah = new Bucket(2);
+            Bucket keranjangBuah = new Bucket(5);
             BucketController bucketController = new BucketController(keranjangBuah, this);
             seller = new Seller("seller", bucketController);
             ListBoxBucket.ItemsSource = keranjangBuah.findAll();
